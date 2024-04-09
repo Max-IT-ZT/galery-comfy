@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: silver;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Центруємо галерею по горизонталі */
+}
+
+.gallery-item {
+  margin: 10px;
+  max-width: 400px; /* Фіксуємо максимальну ширину */
+  width: 100%; /* Забезпечуємо респонсивність */
+}
+
+.gallery-item img,
+.gallery-item video {
+  display: block;
+  width: 100%; /* Забезпечуємо повне заповнення батьківського контейнера */
+  height: auto;
+}
+
+/* Стилізація крапочок */
+.slick-dots-custom {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots-custom .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Активна крапочка */
+.slick-dots-custom .dot.slick-active {
+  background-color: #000;
+}
